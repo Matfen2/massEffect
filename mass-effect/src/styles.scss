@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    display: block;
+}
+
+// ROOT & MIXIN
+@mixin flex ($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+}
+
+$firstColor: azure;
+
+#show {
+    padding: 10px;
+    height: auto;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/massEffectLegendaryEditionWallpaper.jpg');
+    .container-fluid {
+        .navbar {
+            align-items: center;
+            @include flex (row);
+            justify-content: space-between;
+            .navbar-brand {
+                .img-fluid {
+                    height: 150px;
+                    max-width: 250px;
+                    margin-left: 5px;
+                }
+            }
+            #btnBar {
+                display: none;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                .nav-item {
+                    .nav-link {
+                        letter-spacing: 5px;
+                        color: $firstColor;
+                        font-size: 1.1em;
+                        font-family: me123;
+                        text-shadow: 2px 2px 2px #000000;
+                    }
+                    .img-fluid {
+                        height: 120px;
+                        max-width: 150px;
+                    }
+                }
+            }
+        }
+        .show-list {
+            margin: 20px auto;
+            h2 {
+                color: $firstColor;
+                text-align: center;
+                font-family: me123;
+                text-shadow: 2px 2px 2px #000000;
+            }
+            .listEpisodes {
+                margin: 29px auto;
+                .row {
+                    .col-lg-4 {
+                        text-align: center;
+                        .img-fluid {
+                            height: 650px;
+                            cursor: pointer;
+                            max-width: 380px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .copyrigth {
+                padding-top: 10px;
+                padding-bottom: 25px;
+                color: $firstColor;
+                font-size: 1.2em;
+                text-align: center;
+                font-family: me123;
+            }
+        }
+    }
+}
+
+@font-face {
+    font-family: me123;
+    src: url(/assets/font/me123.ttf);
+}

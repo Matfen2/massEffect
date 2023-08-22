@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+#show {
+  padding: 10px;
+  height: auto;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/massEffectLegendaryEditionWallpaper.jpg");
+}
+#show .container-fluid .navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#show .container-fluid .navbar .navbar-brand .img-fluid {
+  height: 150px;
+  max-width: 250px;
+  margin-left: 5px;
+}
+#show .container-fluid .navbar #btnBar {
+  display: none;
+}
+#show .container-fluid .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+}
+#show .container-fluid .navbar .navbar-nav .nav-item .nav-link {
+  letter-spacing: 5px;
+  color: azure;
+  font-size: 1.1em;
+  font-family: me123;
+  text-shadow: 2px 2px 2px #000000;
+}
+#show .container-fluid .navbar .navbar-nav .nav-item .img-fluid {
+  height: 120px;
+  max-width: 150px;
+}
+#show .container-fluid .show-list {
+  margin: 20px auto;
+}
+#show .container-fluid .show-list h2 {
+  color: azure;
+  text-align: center;
+  font-family: me123;
+  text-shadow: 2px 2px 2px #000000;
+}
+#show .container-fluid .show-list .listEpisodes {
+  margin: 29px auto;
+}
+#show .container-fluid .show-list .listEpisodes .row .col-lg-4 {
+  text-align: center;
+}
+#show .container-fluid .show-list .listEpisodes .row .col-lg-4 .img-fluid {
+  height: 650px;
+  cursor: pointer;
+  max-width: 380px;
+}
+#show .container-fluid .footer .copyrigth {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  color: azure;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: me123;
+}
+
+@font-face {
+  font-family: me123;
+  src: url(/assets/font/me123.ttf);
+}/*# sourceMappingURL=styles.css.map */

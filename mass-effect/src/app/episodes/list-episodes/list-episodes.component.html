@@ -1,0 +1,29 @@
+<section id="show">
+    <div class="container-fluid">
+        <div class="navbar">
+            <div class="navbar-brand">
+                <img src="/assets/picts/massEffectLogo.png" alt="massEffectLogo" class="img-fluid w-100" />
+            </div>
+            <button type="button" id="btnBar"><i class="fas fa-bars"></i></button>
+            <div class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">UNIVERS</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">PERSONNAGES</a></li>
+            </div>
+        </div>
+
+        <div class="show-list">
+            <h2>Etes-vous pret à vivre une aventure inoubliable ?</h2>
+            <div class="listEpisodes">
+                <div class="row">
+                    <div class="col-lg-4" *ngFor="let serie of series" [routerLink]="['/serie', serie.id]" [id]="serie.id">
+                        <img [src]="serie.pict" alt="me1" class="img-fluid w-100" appEpisodes/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="copyrigth">&copy;Mass Effect 2023</p>
+        </div>
+    </div>
+</section>

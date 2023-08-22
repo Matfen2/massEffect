@@ -1,0 +1,11 @@
+<div class="showEpisodes" *ngIf="serieDetails">
+    <div class="row">
+        <div class="col-lg-4">
+            <img [src]="serieDetails.affiche" alt="pictMe" class="img-fluid w-100" />
+        </div>
+        <div class="col-lg-8">
+            <h2>{{serieDetails.name}}</h2>
+            <p>{{serieDetails.describe}}</p>
+        </div>
+    </div>
+</div>
